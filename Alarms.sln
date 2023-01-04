@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Alarms", "Alarms.csproj", "{6D68C7C9-B743-49FD-9972-BCD075F79638}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mythos.Common", "..\Mythos.Common\Mythos.Common.csproj", "{E821924C-F156-4919-BC11-4B363B63C8AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D68C7C9-B743-49FD-9972-BCD075F79638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D68C7C9-B743-49FD-9972-BCD075F79638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D68C7C9-B743-49FD-9972-BCD075F79638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D68C7C9-B743-49FD-9972-BCD075F79638}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E821924C-F156-4919-BC11-4B363B63C8AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E821924C-F156-4919-BC11-4B363B63C8AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E821924C-F156-4919-BC11-4B363B63C8AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E821924C-F156-4919-BC11-4B363B63C8AC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79F464AC-F535-430D-91A6-894C6EB19BBE}
+	EndGlobalSection
+EndGlobal
