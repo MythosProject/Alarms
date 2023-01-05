@@ -23,9 +23,10 @@ public class Alarm
     public DaysOfTheWeek Days { get; set; }
 
     /// <summary>
-    /// Gets or sets the Time of the day that this alarm will fire.
+    /// Gets or sets the Time of this Alarm.
+    /// Date component is ignored.
     /// </summary>
-    public TimeOnly Time { get; set; }
+    public DateTimeOffset Time { get; set; }
 
     /// <summary>
     /// Gets or sets a value indicating if this alarm is enabled.
@@ -34,5 +35,24 @@ public class Alarm
 
 
     [Required]
-    public string? OwnerId { get; set; }
+    public string? UserId { get; set; }
+}
+
+public class AlarmDTO
+{
+    /// <summary>
+    /// Gets or sets the Name of the alarm.
+    /// </summary>
+    public string? Name { get; set; }
+
+    /// <summary>
+    /// Gets or sets the days of the week that this alarm will fire.
+    /// </summary>
+    public DaysOfTheWeek Days { get; set; }
+
+    /// <summary>
+    /// Gets or sets the Time of this Alarm.
+    /// Date component is ignored.
+    /// </summary>
+    public DateTimeOffset Time { get; set; }
 }

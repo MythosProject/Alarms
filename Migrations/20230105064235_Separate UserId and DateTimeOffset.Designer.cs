@@ -3,6 +3,7 @@ using System;
 using Alarms;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Alarms.Migrations
 {
     [DbContext(typeof(AlarmsDbContext))]
-    partial class AlarmsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230105064235_Separate UserId and DateTimeOffset")]
+    partial class SeparateUserIdandDateTimeOffset
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.1");
