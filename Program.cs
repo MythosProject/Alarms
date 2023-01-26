@@ -4,7 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.MythosBuilderStartup();
 
-var connectionString = builder.Configuration.GetConnectionString("Alarms") ?? "Data Source=.db/Alarms.db";
+var connectionString = builder.Configuration.GetConnectionString("Alarms") ?? "Data Source=Alarms.db";
 builder.Services.AddSqlite<AlarmsDbContext>(connectionString, b => b.MigrationsAssembly("Alarms"));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 

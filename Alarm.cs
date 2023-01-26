@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Mythos.Common.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace Alarms;
 

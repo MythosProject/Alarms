@@ -34,12 +34,12 @@ internal static class AlarmsApi
             };
         });
 
-        group.MapPost("/test", async Task<Created<Alarm>> (AlarmsDbContext db, CurrentUser owner) =>
+        group.MapPost("/test", Created<Alarm> (AlarmsDbContext db, CurrentUser owner) =>
         {
             var alarm = new Alarm
             {
-                Days = DaysOfTheWeek.Monday | DaysOfTheWeek.Friday,
-                 Time = DateTimeOffset.Now,
+                Days = DaysOfTheWeek.Monday | DaysOfTheWeek.Wednesday,
+                Time = DateTimeOffset.Now,
                 Name = "Take medicine",
                 UserId = owner.User.Id,
             };
